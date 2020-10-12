@@ -1,0 +1,10 @@
+version: "3"
+services:
+  database:
+    build: database
+    environment:
+      POSTGRES_DB: eth
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+    ports:
+      - "5432"
